@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/val_day/static/css/main.b9669d58.css",
+    "main.js": "/val_day/static/js/main.c913889d.js",
+    "static/media/heart.gif": "/val_day/static/media/heart.4f9ba9c169cbeb728d4c.gif",
+    "index.html": "/val_day/index.html",
+    "main.b9669d58.css.map": "/val_day/static/css/main.b9669d58.css.map",
+    "main.c913889d.js.map": "/val_day/static/js/main.c913889d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9669d58.css",
+    "static/js/main.c913889d.js"
+  ]
+}
