@@ -1,5 +1,6 @@
 {
   "name": "val_day",
+  "homepage": "https://geersann.github.io/val_day",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

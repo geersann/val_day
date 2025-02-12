@@ -14,7 +14,7 @@ function Home() {
     const [yesSize, setYesSize] = useState(150);
     const [noSize, setNoSize] = useState(150);
     const [showNoButton, setShowNoButton] = useState(true);
-    const [imageSrc, setImageSrc] = useState("/images/milk-and-mocha.gif");
+    const [imageSrc, setImageSrc] = useState(`${process.env.PUBLIC_URL}/images/milk-and-mocha.gif`);
     const [backgroundImage, setBackgroundImage] = useState("");
 
     const handleNoClick = () => {
@@ -31,11 +31,11 @@ function Home() {
 
     const handleYesClick = () => {
         setText("Yay! I LOVE U LIA❤️");
-        setImageSrc("/images/milk-and-mocha-love.gif"); 
-        setBackgroundImage("url(/images/heart.gif)");
+        setImageSrc(`${process.env.PUBLIC_URL}/images/milk-and-mocha-love.gif`); 
+        setBackgroundImage(`url(${process.env.PUBLIC_URL}/images/heart.gif)`);
 
         // Змінюємо фон на весь html
-        document.documentElement.style.backgroundImage = "url(/images/heart.gif)";
+        document.documentElement.style.backgroundImage = `url(${process.env.PUBLIC_URL}/images/heart.gif)`;
         document.documentElement.style.backgroundSize = "cover"; 
         document.documentElement.style.backgroundPosition = "center";
         document.documentElement.style.height = "100%";
