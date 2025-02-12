@@ -1,0 +1,83 @@
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   user-select: none;
+   margin-top: 185px;
+}
+
+.home_img {
+   max-width: 250px;
+   user-select: none;
+   pointer-events: none;
+}
+
+.main_text {
+   font-family: "Loved by the King", serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 50px;
+   color: rgb(255, 98, 177);
+   user-select: none;
+   pointer-events: none;
+}
+
+button {
+   border: none;
+   outline: none;
+ }
+
+h1 {
+   text-align: center
+}
+ 
+
+.yes_button {
+   background: rgb(21, 255, 0);
+   box-shadow: 0 5px 15px 0 rgb(255, 98, 177);
+   transition: 0.5s;
+   font-family: "Loved by the King", serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 35px;
+   color: rgb(255, 98, 177);
+   width: 150px;
+   height: 75px;
+   border-radius: 10px;
+   outline: none;
+   margin-right: 25px;
+   user-select: none;
+ }
+ 
+ .yes_button:hover {
+   transform: translate(0,-3px);
+   background-color: white;
+   background-image: url(../public//images//heart.gif);
+   box-shadow: 0 20px 40px 0 rgb(21, 255, 0);
+ }
+
+ .no_button {
+   background: rgb(255, 0, 0);
+   box-shadow: 0 5px 15px 0 rgb(255, 98, 177);
+   transition: 0.5s;
+   font-family: "Loved by the King", serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 35px;
+   color: rgb(255, 98, 177);
+   width: 150px;
+   height: 75px;
+   border-radius: 10px;
+   outline: none;
+   user-select: none;
+ }
+ 
+ .no_button:hover {
+   transform: translate(0,-3px);
+   background-color: white;
+   background-image: url(../public//images/rain.gif);
+   box-shadow: 0 20px 40px 0 rgb(255, 0, 0);
+ }
