@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/val_day/static/css/main.0cc38ab0.css",
+    "main.js": "/val_day/static/js/main.59cb21ad.js",
+    "index.html": "/val_day/index.html",
+    "main.0cc38ab0.css.map": "/val_day/static/css/main.0cc38ab0.css.map",
+    "main.59cb21ad.js.map": "/val_day/static/js/main.59cb21ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cc38ab0.css",
+    "static/js/main.59cb21ad.js"
+  ]
+}
