@@ -6,7 +6,20 @@
    flex-direction: column;
    align-items: center;
    user-select: none;
-   margin-top: 185px;
+   position: relative;
+   width: 100%;
+   height: 100vh; 
+   overflow: hidden;
+}
+
+.backgroundImage {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 390px; /* додано px */
+   height: 844px; /* додано px */
+   object-fit: cover; 
+   z-index: -1;
 }
 
 .home_img {
@@ -20,7 +33,7 @@
    font-weight: 500;
    font-style: normal;
    font-size: 50px;
-   color: rgb(255, 98, 177);
+   color: rgb(255, 97, 176);
    user-select: none;
    pointer-events: none;
 }
@@ -28,56 +41,70 @@
 button {
    border: none;
    outline: none;
- }
+}
 
 h1 {
-   text-align: center
+   text-align: center;
 }
- 
+
+/* Новий клас для overlay з heart.gif */
+.heartOverlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   z-index: 9999; /* поверх усіх інших елементів */
+   pointer-events: none;
+}
 
 .yes_button {
    background: rgb(21, 255, 0);
-   box-shadow: 0 5px 15px 0 rgb(255, 98, 177);
+   box-shadow: 0 5px 15px 0 rgb(255, 97, 176);
    transition: 0.5s;
    font-family: "Loved by the King", serif;
    font-weight: 500;
    font-style: normal;
    font-size: 35px;
-   color: rgb(255, 98, 177);
+   color: rgb(255, 0, 128);
    width: 150px;
    height: 75px;
    border-radius: 10px;
    outline: none;
    margin-right: 25px;
    user-select: none;
- }
+}
  
- .yes_button:hover {
-   transform: translate(0,-3px);
+.yes_button:hover {
+   transform: translate(0, -3px);
    background-color: white;
-   background-image: url(../public//images//heart.gif);
+   /* Можна прибрати background-image з hover, адже overlay з'являється через JS */
+   /* background-image: url(../public/images/heart.gif); */
    box-shadow: 0 20px 40px 0 rgb(21, 255, 0);
- }
-
- .no_button {
-   background: rgb(255, 0, 0);
-   box-shadow: 0 5px 15px 0 rgb(255, 98, 177);
+}
+ 
+.no_button {
+   background: rgb(211, 11, 11);
+   box-shadow: 0 5px 15px 0 rgb(255, 97, 176);
    transition: 0.5s;
    font-family: "Loved by the King", serif;
    font-weight: 500;
    font-style: normal;
    font-size: 35px;
-   color: rgb(255, 98, 177);
+   color: rgb(255, 97, 176);
    width: 150px;
    height: 75px;
    border-radius: 10px;
    outline: none;
    user-select: none;
- }
+}
  
- .no_button:hover {
-   transform: translate(0,-3px);
+.no_button:hover {
+   transform: translate(0, -3px);
    background-color: white;
-   background-image: url(../public//images/rain.gif);
+   background-image: url(../public/images/rain.gif);
    box-shadow: 0 20px 40px 0 rgb(255, 0, 0);
- }
+}
